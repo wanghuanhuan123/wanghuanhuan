@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+	<div class="qiqu-wrap">
+		<header class="qiqu-app-header">
+			<section class="banner">
+				<img src="images/header-bg-ui2.png" />
+				<button class="qiqu-sprite addBtn"></button>
+			</section>
+			<nav><ul>
+				<li class="on"><a href="#">精选</a></li>
+				<li><a href="#">段子</a></li>
+				<li><a href="#">发现</a></li>
+				<li><a href="#">奇趣专栏</a></li>
+			</ul></nav>
+		</header>
+		<div class="qiqu-app-main">
+			<div class="inde-page">
+				<div class="banner"></div>
+				<div class="duan-list">
+					<!-- <section class="duan-item">
+						
+						<div class="content">
+							<dl>
+								<dt><img src="http://image.uc.cn/n/nav/17/dfce749a04874f8c9c0989f5b4d00459f.jpeg" /></dt>
+								<dd>
+									<h3 class="title">大量英国皇室“私密照”流出，敢不敢看？大量英国皇室“私密照”流出，敢不敢看？！</h3>
+									<p>尺度惊人！尺度惊人！尺度惊人！尺度惊人！尺度惊人！</p>
+								</dd>
+							</dl>
+						</div>
+						<footer class="footer-tool">
+							<nav>
+								<a href="javascript:;" class="on">
+									<i class="qiqu-sprite ok"></i><onput>100</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite no"></i><onput>9</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite share"></i><onput>分享</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite comment"></i><onput>评论</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite paihang"></i><onput>1223</onput>
+								</a>
+							</nav>
+						</footer>
+					</section>
+
+					<section class="duan-item">
+						<header class="header-infor">
+							<div class="user-box">
+								<img src="http://image.uc.cn/s/uae/g/0q/avatar/41.png" />
+								<span>孤独的小白兔</span>
+							</div>
+							<button class="btn min-btn">举报</button>
+						</header>
+						<div class="content">
+							<p>小家伙很顽强，到最后利用积极的拼抢造成对方犯规！（点̡我̡头̡像̡，看̡我̡签̡名̡，你̡懂̡得̡！）</p>
+							<img src="http://image.uc.cn/o/nav/1k/;,70,;0,nav/g/qiqu/2015/0c0d5ed81d41e47db24bc9d1a2f4fa10x460x570x56.jpeg;3,320x" />
+						</div>
+						<footer class="footer-tool">
+							<nav>
+								<a href="javascript:;" class="on">
+									<i class="qiqu-sprite ok"></i><onput>100</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite no"></i><onput>9</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite share"></i><onput>分享</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite comment"></i><onput>评论</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite paihang"></i><onput>1223</onput>
+								</a>
+							</nav>
+						</footer>
+					</section>
+
+					<section class="duan-item">
+						<header class="header-infor">
+							<div class="user-box">
+								<img src="http://image.uc.cn/s/uae/g/0q/avatar/41.png" />
+								<span>孤独的小白兔</span>
+							</div>
+							<button class="btn min-btn">举报</button>
+						</header>
+						<div class="content">
+							<p>小家伙很顽强，到最后利用积极的拼抢造成对方犯规！（点̡我̡头̡像̡，看̡我̡签̡名̡，你̡懂̡得̡！）</p>
+						</div>
+						<footer class="footer-tool">
+							<nav>
+								<a href="javascript:;" class="on">
+									<i class="qiqu-sprite ok"></i><onput>100</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite no"></i><onput>9</onput>
+								</a>
+								<a href="javascript:;">
+									<i class="qiqu-sprite share"></i><onput>分享</onput>
+								</a>
+							</nav>
+						</footer>
+					</section> -->
+
+				</div>
+			</div>	
+		
+			
+		</div>
+	</div>
+	<script id="listTpl" type="text/x-handlebars-template">  
+		
+
+		{{#each data}}
+			{{#if user_name}}
+			<section class="duan-item">
+				<header class="header-infor">
+					<div class="user-box">
+						<img src="{{avatar}}" />
+						<span>{{user_name}}</span>
+					</div>
+					<button class="btn min-btn">举报</button>
+				</header>
+				<div class="content">
+					<p>{{title}}</p>
+					{{#if media_data}}
+						{{#each media_data}}
+							<img src="{{mobile_img_url}}" />
+						{{/each}}
+					{{/if}}
+				</div>
+				<footer class="footer-tool">
+					<nav>
+						<a href="javascript:;" class="">
+							<i class="qiqu-sprite ok"></i><onput>{{_incrs.like}}</onput>
+						</a>
+						<a href="javascript:;">
+							<i class="qiqu-sprite no"></i><onput>{{_incrs.dislike}}</onput>
+						</a>
+						<a href="javascript:;">
+							<i class="qiqu-sprite share"></i><onput>分享</onput>
+						</a>
+					</nav>
+				</footer>
+			</section>
+			{{else}}
+				<section class="duan-item">
+					<div class="content">
+						<dl>
+							<dt><img src="{{cover}}" /></dt>
+							<dd>
+								<h3 class="title">{{title}}</h3>
+								<p>{{desc}}</p>
+							</dd>
+						</dl>
+					</div>
+					<footer class="footer-tool">
+						<nav>
+							
+							<a href="javascript:;">
+								<i class="qiqu-sprite comment"></i><onput>{{_incrs.jian}}</onput>
+							</a>
+							<a href="javascript:;">
+								<i class="qiqu-sprite paihang"></i><onput>{{_incrs.ai}}</onput>
+							</a>
+						</nav>
+					</footer>
+				</section>
+			{{/if}}
+		{{/each}}
+
+	</script>  
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+	<script type="text/javascript">
+
+		// //用jquery获取模板
+	 //    var tpl   =  $("#tpl").html();
+	 //    //预编译模板
+	 //    var template = Handlebars.compile(tpl);
+	 //    //模拟json数据
+	 //    var context = { 
+	 //    	name: "zhaoshuai", 
+	 //    	content: {
+		//     	age : 1000,
+		//     	sex : "不男不女"
+		//     },
+		//     programme : [
+		//     	{
+		//     		name : "a1"
+		//     	},
+		//     	{
+		//     		name : "a2"
+		//     	},
+		//     	{
+		//     		name : "a3"
+		//     	}
+		//     ],
+		//     error : "并没有",
+		//     list : ["s1","s2","s3"],
+		//     data : {
+		//     	name : "ssss",
+		//     	age : 2000
+		//     }
+		// };
+	 //    //匹配json内容
+	 //    var html = template(context);
+	 //    //输入模板
+	 //    $("body").html(html);
+
+	    //数据  模板   遍历到什么地方
+
+
+	    $.fn.handlebars = function( tpl, data ){
+	    	
+	    	this.each(function(){
+	    		var template = Handlebars.compile(tpl);
+	    		var html = template(data);
+	    		$(this).append( html )
+	    	})
+	    	return false;
+	    }
+
+
+
+
+
+
+
+	//&=&_objects=active_time%3A%5B*+TO+%222016-10-21+15%3A25%3A00%22%5D&_select=url%2Ctitle%2Ccover%2Ctag%2Cdesc%2Ccomment_total%2Cincrs_flag%2Clist_name%2Cpost_type;
+
+		
+
+
+
+		var getIndexList = function(){
+			this.domBox = $( ".duan-list" );
+			this.tpl = $( "#listTpl" ).html();
+			this.timeStr = +new Date()+"";
+			this.page = 0;
+			this.init();
+		};
+		getIndexList.prototype = {
+
+			init : function(){
+				
+				this.getApiList();
+				this.addEvent();
+			},
+			getApiList : function(){
+				var that =this;
+				$.ajax({
+					url : "http://napi.uc.cn/3/classes/topic/lists/首页精选列表",
+					type:"get",
+					data : {
+						_app_id:"hottopic",
+						_size:10,
+						_fetch:1,
+						_fetch_incrs:1,
+						_max_pos:this.timeStr.toString(),
+						_fetch_total:1,
+						_select:"like_start,dislike_start,title,tag,media_data,list_info,content,avatar,user_name,is_hot,hot_comment,comment_total,original,tv_duration"
+					},
+					dataType : "json",
+					success : function(data){
+						if( that.page < 10 ){
+							var res = { data:[] };
+							res["data"][0] = getRibao(that.page);
+							res["data"][0]["user_name"] = "";
+							that.updata( res )
+							that.page+=1;
+						}
+						that.timeStr -= 1000*60*60*12;
+
+						that.updata(data)
+					}
+				})
+			},
+
+			updata : function(data){
+				var tpl = this.tpl;
+				this.domBox.handlebars(tpl,data)
+			},
+
+			addEvent : function(){
+				var winH = $(window).height(),
+					scrollTop = 0,
+					bodyH = 0,
+					that = this;
+				$(document).scroll(function(){
+					scrollTop = $("body").scrollTop();
+					bodyH = $("body").height();
+
+					if( bodyH-scrollTop <= winH ){
+						that.getApiList();
+					}
+					
+				})
+			}
+
+
+		}
+
+		var getRibao = (function( getIndexList ){
+			var ribao = [];
+			var getCallback = "";
+			$.ajax({
+				url : "http://napi.uc.cn/3/classes/topic/search",
+				type:"get",
+				data : {
+					_app_id:"hottopic",
+					_fetch:1,
+					_fetch_incrs:1,
+					_sort:"_lists.score:desc",
+					_lists:'_lists.list_id:"index_promotion"',
+					_objects:'active_time:[* TO "2016-10-21 15:25:00"]',
+					_select:'url,title,cover,tag,desc,comment_total,incrs_flag,list_name,post_type'
+				},
+				dataType : "json",
+				success : function(data){
+					ribao = data.data;
+					new getIndexList();
+				}
+			});
+
+			return function( index ){
+				if( !ribao[index] ){
+					return false;
+				}
+				console.log( ribao )
+				return ribao[index];
+			}
+		})( getIndexList );
+
+
+
+		
+		//小贱日报
+		
+		// //小贱日报
+		
+		
+
+
+
+
+
+	</script>
+</body>
+</html>
