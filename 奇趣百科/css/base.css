@@ -1,247 +1,246 @@
-html {
-  font-size: 100px;
+html{
+  font-size:100px;
 }
-@media screen and ( min-width: 414px ) {
+@media screen and ( min-width:414px ){
   html {
-    font-size: 110px;
+    font-size:110px;
   }
 }
-@media screen and ( max-width: 320px ) {
-  html {
-    font-size: 75px;
+@media screen and ( max-width:320px ){
+  html{
+    font-size:75px;
   }
 }
-
 body{
-  max-width: 650px;
-  margin: 0 auto;
+  max-width:650px;
+  margin:0 auto;
 }
-.qiqu-sprite {
-  background-image: url(../images/26.png);
-  background-repeat: no-repeat;
-  background-size: 2.5rem;
+.qiqu-sprite{
+  background-image:url(../images/26.png);
+  background-repeat:no-repeat;
+  background-size:2.5rem;
 }
-.qiqu-wrap {
-  width: 100%;
-  background: #e3e1d4;
+.qiqu-wrap{
+  width:100%;
+  background:#e3e1d4;
 }
-.qiqu-wrap .qiqu-app-header {
-  width: 100%;
+.qiqu-wrap .qiqu-app-header{
+  width:100%;
 }
-.qiqu-wrap .qiqu-app-header .banner {
-  width: 100%;
-  position: relative;
+.qiqu-wrap .qiqu-app-header .banner{
+  width:100%;
+  position:relative;
 }
-.qiqu-wrap .qiqu-app-header .banner img {
-  display: block;
-  width: 100%;
+.qiqu-wrap .qiqu-app-header .banner img{
+  display:block;
+  width:100%;
 }
-.qiqu-wrap .qiqu-app-header .banner .addBtn {
-  width: 0.3rem;
-  height: 0.3rem;
-  position: absolute;
-  top: 0.1rem;
-  right: 0.1rem;
-  background-position: -0.6rem -0.11rem;
-  border: 0;
-  background-color: transparent;
+.qiqu-wrap .qiqu-app-header .banner .addBtn{
+  width:0.3rem;
+  height:0.3rem;
+  position:absolute;
+  top:0.1rem;
+  right:0.1rem;
+  background-position:-0.6rem -0.11rem;
+  border:0;
+  background-color:transparent;
 }
-.qiqu-wrap .qiqu-app-header nav {
-  width: 100%;
-  background: #f79100;
+.qiqu-wrap .qiqu-app-header nav{
+  width:100%;
+  background:#f79100;
 }
-.qiqu-wrap .qiqu-app-header nav ul {
-  width: 100%;
-  display: -webkit-box;
-  height: 0.38rem;
-  line-height: 0.38rem;
+.qiqu-wrap .qiqu-app-header nav ul{
+  width:100%;
+  display:-webkit-box;
+  height:0.38rem;
+  line-height:0.38rem;
 }
-.qiqu-wrap .qiqu-app-header nav ul li {
-  -webkit-box-flex: 1;
-  text-align: center;
+.qiqu-wrap .qiqu-app-header nav ul li{
+  -webkit-box-flex:1;
+  text-align:center;
 }
-.qiqu-wrap .qiqu-app-header nav ul li a {
-  font-size: 0.12rem;
-  color: #874f02;
-  text-decoration: none;
-  display: block;
-  width: 0.77rem;
-  margin: 0 auto;
+.qiqu-wrap .qiqu-app-header nav ul li a{
+  font-size:0.12rem;
+  color:#874f02;
+  text-decoration:none;
+  display:block;
+  width:0.77rem;
+  margin:0 auto;
 }
-.qiqu-wrap .qiqu-app-header nav ul li.on a {
-  background-image: url(../images/26.png);
-  background-repeat: no-repeat;
-  background-size: 2.5rem;
-  background-position: 0 -0.45rem;
-  color: #f2df2d;
-  text-shadow: 1px 1px 0 #764000;
+.qiqu-wrap .qiqu-app-header nav ul li.on a{
+  background-image:url(../images/26.png);
+  background-repeat:no-repeat;
+  background-size:2.5rem;
+  background-position:0 -0.45rem;
+  color:#f2df2d;
+  text-shadow:1px 1px 0 #764000;
 }
-.qiqu-wrap .qiqu-app-main {
-  width: 100%;
-  padding: 0.1rem;
-  box-sizing: border-box;
+.qiqu-wrap .qiqu-app-main{
+  width:100%;
+  padding:0.1rem;
+  box-sizing:border-box;
 }
-.btn {
-  border: 1px solid #ccc;
-  color: #ccc;
-  border-radius: 0.03rem;
-  font-size: 12px;
-  background: none;
+.btn{
+  border:1px solid #ccc;
+  color:#ccc;
+  border-radius:0.03rem;
+  font-size:12px;
+  background:none;
 }
-.duan-list {
-  width: 100%;
+.duan-list{
+  width:100%;
 }
-.duan-list .duan-item {
-  width: 100%;
-  background: #fff;
-  margin-bottom: 0.1rem;
+.duan-list .duan-item{
+  width:100%;
+  background:#fff;
+  margin-bottom:0.1rem;
 }
-.duan-list .duan-item .header-infor {
-  width: 100%;
-  height: 0.54rem;
-  padding: 0.1rem;
-  box-sizing: border-box;
-  position: relative;
+.duan-list .duan-item .header-infor{
+  width:100%;
+  height:0.54rem;
+  padding:0.1rem;
+  box-sizing:border-box;
+  position:relative;
 }
-.duan-list .duan-item .header-infor .user-box {
-  display: block;
-  overflow: hidden;
-  line-height: 0.35rem;
+.duan-list .duan-item .header-infor .user-box{
+  display:block;
+  overflow:hidden;
+  line-height:0.35rem;
 }
-.duan-list .duan-item .header-infor .user-box img {
-  display: block;
-  width: 0.34rem;
-  height: 0.34rem;
-  float: left;
-  border-radius: 100%;
+.duan-list .duan-item .header-infor .user-box img{
+  display:block;
+  width:0.34rem;
+  height:0.34rem;
+  float:left;
+  border-radius:100%;
 }
-.duan-list .duan-item .header-infor .user-box span {
-  font-size: 0.12rem;
-  color: #9a9a9a;
-  float: left;
-  display: block;
-  padding-left: 0.1rem;
+.duan-list .duan-item .header-infor .user-box span{
+  font-size:0.12rem;
+  color:#9a9a9a;
+  float:left;
+  display:block;
+  padding-left:0.1rem;
 }
-.duan-list .duan-item .header-infor .btn {
-  position: absolute;
-  top: 0.15rem;
-  right: 0.1rem;
+.duan-list .duan-item .header-infor .btn{
+  position:absolute;
+  top:0.15rem;
+  right:0.1rem;
 }
-.duan-list .duan-item .content {
-  width: 100%;
+.duan-list .duan-item .content{
+  width:100%;
 }
-.duan-list .duan-item .content > p {
-  font-size: 0.12rem;
-  padding: 0 0.1rem;
-  margin-bottom: 0.05rem;
+.duan-list .duan-item .content > p{
+  font-size:0.12rem;
+  padding:0 0.1rem;
+  margin-bottom:0.05rem;
 }
-.duan-list .duan-item .content > img {
-  width: 100%;
-  display: block;
+.duan-list .duan-item .content > img{
+  width:100%;
+  display:block;
 }
-.duan-list .duan-item .content > dl {
-  width: 100%;
-  padding: 0.1rem;
-  box-sizing: border-box;
-  display: -webkit-box;
+.duan-list .duan-item .content > dl{
+  width:100%;
+  padding:0.1rem;
+  box-sizing:border-box;
+  display:-webkit-box;
 }
-.duan-list .duan-item .content > dl dt {
-  width: 0.8rem;
-  height: 0.8rem;
+.duan-list .duan-item .content > dl dt{
+  width:0.8rem;
+  height:0.8rem;
 }
-.duan-list .duan-item .content > dl dt img {
-  display: block;
-  width: 100%;
+.duan-list .duan-item .content > dl dt img{
+  display:block;
+  width:100%;
 }
-.duan-list .duan-item .content > dl dd {
-  -webkit-box-flex: 1;
-  margin-left: 0.1rem;
+.duan-list .duan-item .content > dl dd{
+  -webkit-box-flex:1;
+  margin-left:0.1rem;
 }
-.duan-list .duan-item .content > dl dd .title {
-  font-size: 0.16rem;
-  color: #000;
-  height: 0.5rem;
-  overflow: hidden;
-  line-height: 1.5;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  background: #ccc;
-  font-weight: normal;
-  padding: 0 .05rem;
+.duan-list .duan-item .content > dl dd .title{
+  font-size:0.16rem;
+  color:#000;
+  height:0.5rem;
+  overflow:hidden;
+  line-height:1.5;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  text-overflow:ellipsis;
+  background:#ccc;
+  font-weight:normal;
+  padding:0 .05rem;
 }
-.duan-list .duan-item .content > dl dd p {
-  font-size: 0.12rem;
-  color: #ccc;
-  line-height: 0.2rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+.duan-list .duan-item .content > dl dd p{
+  font-size:0.12rem;
+  color:#ccc;
+  line-height:0.2rem;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow:hidden;
 }
-.duan-list .duan-item .footer-tool {
-  width: 100%;
+.duan-list .duan-item .footer-tool{
+  width:100%;
 }
-.duan-list .duan-item .footer-tool nav {
-  width: 100%;
-  display: -webkit-box;
+.duan-list .duan-item .footer-tool nav{
+  width:100%;
+  display:-webkit-box;
 }
-.duan-list .duan-item .footer-tool nav a {
-  -webkit-box-flex: 1;
-  display: block;
-  height: 0.4rem;
-  text-decoration: none;
-  display: -webkit-box;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
+.duan-list .duan-item .footer-tool nav a{
+  -webkit-box-flex:1;
+  display:block;
+  height:0.4rem;
+  text-decoration:none;
+  display:-webkit-box;
+  -webkit-box-align:center;
+  -webkit-box-pack:center;
 }
-.duan-list .duan-item .footer-tool nav a i {
-  display: block;
-  width: 0.2rem;
-  height: 0.2rem;
+.duan-list .duan-item .footer-tool nav a i{
+  display:block;
+  width:0.2rem;
+  height:0.2rem;
 }
-.duan-list .duan-item .footer-tool nav a i.ok {
-  background-position: -0.25rem -1.01rem;
+.duan-list .duan-item .footer-tool nav a i.ok{
+  background-position:-0.25rem -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a i.no {
-  background-position: -0.75rem -1.01rem;
+.duan-list .duan-item .footer-tool nav a i.no{
+  background-position:-0.75rem -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a i.share {
-  background-position: -1rem -1.01rem;
+.duan-list .duan-item .footer-tool nav a i.share{
+  background-position:-1rem -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a i.paihang {
-  background-position: -1.5rem -1.01rem;
+.duan-list .duan-item .footer-tool nav a i.paihang{
+  background-position:-1.5rem -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a i.comment {
-  background-position: -2rem -1.01rem;
+.duan-list .duan-item .footer-tool nav a i.comment{
+  background-position:-2rem -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a onput {
-  font-size: 0.12rem;
-  color: #ccc;
-  text-decoration: none;
-  display: block;
-  margin-left: 0.05rem;
+.duan-list .duan-item .footer-tool nav a onput{
+  font-size:0.12rem;
+  color:#ccc;
+  text-decoration:none;
+  display:block;
+  margin-left:0.05rem;
 }
-.duan-list .duan-item .footer-tool nav a.on i.ok {
-  background-position: 0 -1.01rem;
+.duan-list .duan-item .footer-tool nav a.on i.ok{
+  background-position:0 -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a.on i.no {
-  background-position: -0.5rem -1.01rem;
+.duan-list .duan-item .footer-tool nav a.on i.no{
+  background-position:-0.5rem -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a.on i.share {
-  background-position: -1.25rem -1.01rem;
+.duan-list .duan-item .footer-tool nav a.on i.share{
+  background-position:-1.25rem -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a.on i.paihang {
-  background-position: -1.75rem -1.01rem;
+.duan-list .duan-item .footer-tool nav a.on i.paihang{
+  background-position:-1.75rem -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a.on i.comment {
-  background-position: -2.25rem -1.01rem;
+.duan-list .duan-item .footer-tool nav a.on i.comment{
+  background-position:-2.25rem -1.01rem;
 }
-.duan-list .duan-item .footer-tool nav a.on onput {
-  color: #f79100;
+.duan-list .duan-item .footer-tool nav a.on onput{
+  color:#f79100;
 }
-.inde-page .banner {
-  width: 100%;
-  height: 200px;
-  background: #f00;
+.inde-page .banner{
+  width:100%;
+  height:200px;
+  background:#f00;
 }

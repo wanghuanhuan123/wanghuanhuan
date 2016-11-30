@@ -1,0 +1,237 @@
+html,body{
+    position:relative;
+    height:100%;
+}
+body{
+    background:#eee;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:14px;
+    color:#000;
+    margin:0;
+    padding:0;
+}
+.swiper-container{
+    width:100%;
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.swiper-slide{
+    text-align:center;
+    font-size:18px;
+    background:#fff;
+    /* Center slide text vertically */
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+}
+#wrap .page1{
+    background:#60d5cd;
+}
+#wrap .page1 .left-content{
+    width:50%;
+    height:100%;
+    position:relative;
+    float:left;
+}
+#wrap .page1 .left-content .mes{
+    width:50px;
+    position:absolute;
+    top:20px;
+    left:20px;
+    display:block;
+}
+#wrap .page1 .left-content .logo{
+    width:70%;
+    position:absolute;
+    top:150px;
+    left:50px;
+    display:block;
+}
+#wrap .page1 .right-content{
+    width:50%;
+    height:100%;
+    position:relative;
+    float:left;
+}
+#wrap .page1 .right-content .light{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+#wrap .page1 .right-content .light img{
+    display:block;
+    width:40%;
+    z-index:1;
+    position:absolute;
+}
+#wrap .page1 .right-content .light img.light1{
+    left:0;
+    top:0;
+}
+#wrap .page1 .right-content .light img.light2{
+    left:15%;
+    top:0;
+}
+#wrap .page1 .right-content .light img.light3{
+    left:30%;
+    top:0;
+}
+#wrap .page1 .right-content .light img.light4{
+    left:45%;
+    top:0;
+}
+#wrap .page1 .right-content .light img.light5{
+    left:60%;
+    top:0;
+}
+#wrap .page1 .right-content .wutai{
+    width:60%;
+    top:20%;
+    position:absolute;
+    left:20%;
+    z-index:0;
+}
+#wrap .page1 .right-content .pepole{
+    width:70%;
+    bottom:0;
+    position:absolute;
+    left:15%;
+    z-index:2;
+}
+#wrap .page1 .right-content .flower{
+    width:100%;
+    top:0;
+    position:absolute;
+    left:0;
+    z-index:3;
+}
+#wrap .page2{
+    background:url(../images/bj2.jpg) no-repeat;
+    background-size:cover;
+    width:100%;
+    height:100%;
+}
+#wrap .page2 .gongneng{
+    width:100%;
+}
+#wrap .page2 .gongneng .gongneng-item{ 
+    width:25%;
+    float:left;
+    position:relative; 
+}
+#wrap .page2 .gongneng .gongneng-item img{
+    width:50%;
+    display:block;
+    margin:0 auto;
+}
+#wrap .page2 .gongneng .gongneng-item img.animate-round{
+    width:45%;
+    display:block;
+    position:absolute;
+    top:-2.5%;
+    left:27%;
+}
+#wrap .page2 .gongneng .gongneng-item .zui{
+    width:25%;
+    display:block;
+    position:absolute;
+    top:20.5%;
+    left:38%;
+}
+#wrap .page2 .gongneng .gongneng-item .hands{
+    width:25%;
+    display:block;
+    position:absolute;
+    top:19.5%;
+    left:38%;
+}
+#wrap .page2 .gongneng .gongneng-item .zui img{
+    width:100%;
+    display:block;
+}
+#wrap .page2 .gongneng .gongneng-item:hover .animate-round{
+    -webkit-animation:round 1s linear infinite;
+}
+#wrap .page2 .gongneng .gongneng-item:hover .zui img{
+    -webkit-animation:zui .5s linear infinite;
+}
+@keyframes zui{
+  0%{
+    opacity:0;
+  }
+  49.99%{
+    opacity:0;
+  }
+  50%{
+    opacity:1;
+  }
+  99.99%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+@keyframes round{
+  0%{
+    -webkit-transform:rotate(0deg);
+  }
+  12.49%{
+    -webkit-transform:rotate(0deg);
+  }
+  12.5%{
+    -webkit-transform:rotate(45deg);
+  }
+  24.99%{
+    -webkit-transform:rotate(45deg);
+  }
+  25%{
+    -webkit-transform:rotate(90deg);
+  }
+  37.49%{
+    -webkit-transform:rotate(90deg);
+  }
+  37.5%{
+    -webkit-transform:rotate(135deg);
+  }
+  49.99%{
+    -webkit-transform:rotate(135deg);
+  }
+  50%{
+    -webkit-transform:rotate(180deg);
+  }
+  62.49%{
+    -webkit-transform:rotate(180deg);
+  }
+  62.5%{
+    -webkit-transform:rotate(225deg);
+  }
+  74.99%{
+    -webkit-transform:rotate(225deg);
+  }
+  75%{
+    -webkit-transform:rotate(270deg);
+  }
+  87.49%{
+    -webkit-transform:rotate(270deg);
+  }
+  87.5%{
+    -webkit-transform:rotate(315deg);
+  }
+  99.99%{
+    -webkit-transform:rotate(315deg);
+  }
+  100%{
+    -webkit-transform:rotate(360deg);
+  }
+}
